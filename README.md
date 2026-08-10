@@ -132,6 +132,30 @@ The model is evaluated using metrics such as:
 
 The trained model is used to predict the final score for new student data.
 
+## Model Results
+
+The Linear Regression model was evaluated using the test dataset.
+
+The following evaluation metrics were used:
+
+* **Mean Absolute Error (MAE):** Measures the average absolute difference between actual and predicted scores.
+* **Mean Squared Error (MSE):** Measures the average squared difference between actual and predicted scores.
+* **Root Mean Squared Error (RMSE):** Represents the square root of the mean squared error.
+* **R² Score:** Measures how well the model explains the variation in the target variable.
+
+The project also includes visualizations comparing actual and predicted student scores.
+
+## Visualizations
+
+The project generates the following visualizations:
+
+1. Study Hours vs Final Score
+2. Attendance vs Final Score
+3. Actual vs Predicted Final Scores
+
+These visualizations help understand relationships within the dataset and evaluate the model's prediction performance.
+
+
 ## Expected Learning Outcomes
 
 Through this project, I applied the concepts learned throughout the internship, including:
