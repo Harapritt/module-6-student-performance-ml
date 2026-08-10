@@ -134,16 +134,39 @@ The trained model is used to predict the final score for new student data.
 
 ## Model Results
 
-The Linear Regression model was evaluated using the test dataset.
+The Linear Regression model was evaluated using 20% of the dataset as testing data.
 
-The following evaluation metrics were used:
+The model produced the following results:
 
-* **Mean Absolute Error (MAE):** Measures the average absolute difference between actual and predicted scores.
-* **Mean Squared Error (MSE):** Measures the average squared difference between actual and predicted scores.
-* **Root Mean Squared Error (RMSE):** Represents the square root of the mean squared error.
-* **R² Score:** Measures how well the model explains the variation in the target variable.
+| Evaluation Metric              | Result |
+| ------------------------------ | -----: |
+| Mean Absolute Error (MAE)      |   0.41 |
+| Mean Squared Error (MSE)       |   0.20 |
+| Root Mean Squared Error (RMSE) |   0.45 |
+| R² Score                       |   1.00 |
 
-The project also includes visualizations comparing actual and predicted student scores.
+### Prediction Results
+
+The model was tested on six unseen test samples.
+
+Predicted values:
+
+```text
+79.83, 58.68, 84.55, 74.72, 89.58, 61.69
+```
+
+Actual values:
+
+```text
+80, 59, 85, 75, 89, 61
+```
+
+The predicted values were very close to the actual values for this dataset, resulting in a low prediction error.
+
+### Note
+
+The dataset used in this project is a small, structured sample dataset created for educational purposes. Therefore, the very high R² score should not be interpreted as evidence that the model would achieve the same performance on larger or real-world student datasets.
+
 
 ## Visualizations
 
